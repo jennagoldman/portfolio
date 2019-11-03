@@ -1,0 +1,17 @@
+header {
+  height:800px;
+  background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5)), url('../img/wireframe.jpg');
+  background-size:cover;
+}
+
+header .container {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+header h1, header h2 {
+  color:#fff;
+}
