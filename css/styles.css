@@ -1,3 +1,6 @@
+/************
+HEADER STYLES
+************/
 header {
   height:800px;
   background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5)), url('../img/wireframe.jpg');
@@ -17,35 +20,76 @@ header h2 {
   margin-top:0;
 }
 
+
+/************
+BUTTON STYLES
+************/
 button {
-  background-color: #6E35E8;
   border: 1px solid #6E35E8;
   border-radius: 15px;
-  color: #fff;
   width:125px;
   margin-top:10px;
   padding:5px;
   text-transform: uppercase;
 }
 
-button:hover {
+.btn-purple {
+  background-color: #6E35E8;
+  color: #fff;
+}
+
+.btn-purple:hover {
   background-color: #fff;
   color: #6E35E8;
 }
 
+.btn-white {
+  background-color: #FFF;
+  border: 1px solid #6E35E8;
+  color: #6E35E8;
+}
+
+.btn-white:hover {
+  background-color: #6E35E8;
+  color: #FFF;
+}
+
+
+/*************
+SECTION STYLES
+*************/
 section {
   padding: 20px 0;
 }
 
-section h2 a {
+.section-white h2 a {
   color: #000;
 }
 
-section h2 a:hover {
+.section-whites h2 a:hover {
   text-decoration: none;
   color: #000;
 }
 
+.section-purple {
+  background-color: #6E35E8;
+  color: #fff;
+}
+
+.section-purple h2 a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.section-purple a {
+  color:#fff;
+  font-weight: bold;
+}
+
+
+/************
+PANEL STYLES
+************/
 .panel {
   height: 225px;
 }
@@ -59,40 +103,22 @@ section h2 a:hover {
   text-align: center;
 }
 
-.btn-white {
-  background-color: #FFF;
-  border: 1px solid #6E35E8;
-  color: #6E35E8;
-}
 
-button:hover {
-  background-color: #6E35E8;
-  color: #FFF;
-}
-
-.section-purple {
-  background-color: #6E35E8;
-  color: #fff;
-}
-
-.section-purple h2 a:hover {
-  color: #FFF;
-  text-decoration: none;
+/*******************
+MISC ABOUT ME STYLES
+*******************/
+.italics {
+  font-style:italic;
 }
 
 #headshot {
   width: 275px;
 }
 
-.section-purple a {
-  color:#fff;
-  font-weight: bold;
-}
 
-.italics {
-  font-style:italic;
-}
-
+/************
+FOOTER STYLES
+************/
 footer {
   background-color: #000;
   color: #fff;
