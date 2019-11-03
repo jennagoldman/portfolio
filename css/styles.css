@@ -39,6 +39,11 @@ section {
   width: 275px;
 }
 
+.section-purple a {
+  color:#fff;
+  font-weight: bold;
+}
+
 .italics {
   font-style:italic;
 }
