@@ -17,6 +17,19 @@ section {
   padding: 20px 0;
 }
 
+.panel {
+  height: 200px;
+}
+
+.panel-default .panel-heading {
+  background-color: #6e35E8;
+  color: #fff;
+}
+
+.panel-title {
+  text-align: center;
+}
+
 .section-purple {
   background-color: #6e35E8;
   color: #fff;
