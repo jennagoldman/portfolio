@@ -47,7 +47,7 @@ section h2 a:hover {
 }
 
 .panel {
-  height: 200px;
+  height: 225px;
 }
 
 .panel-default .panel-heading {
@@ -57,6 +57,17 @@ section h2 a:hover {
 
 .panel-title {
   text-align: center;
+}
+
+.btn-white {
+  background-color: #FFF;
+  border: 1px solid #6E35E8;
+  color: #6E35E8;
+}
+
+button:hover {
+  background-color: #6E35E8;
+  color: #FFF;
 }
 
 .section-purple {
@@ -69,7 +80,7 @@ section h2 a:hover {
   text-decoration: none;
 }
 
-.section-purple img {
+#headshot {
   width: 275px;
 }
 
