@@ -1,19 +1,16 @@
 header {
-  height:800px;
+  height:600px;
   background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5)), url('../img/wireframe.jpg');
   background-size:cover;
+  color: #fff;
 }
 
 header .container {
   display: flex;
-  height: 800px;
+  height: 600px;
   justify-content: center;
   align-items: center;
   flex-direction:column;
-}
-
-header h1, header h2 {
-  color:#fff;
 }
 
 section {
@@ -26,7 +23,11 @@ section {
 }
 
 .section-purple img {
-  width: 250px;
+  width: 275px;
+}
+
+.italics {
+  font-style:italic;
 }
 
 footer {
@@ -44,7 +45,6 @@ footer {
 	border-radius: 20px;
   float:right;
   background: #6e35E8;
-  color:#fff;
 }
 
 .social-icon i {
