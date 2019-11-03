@@ -15,3 +15,16 @@ header .container {
 header h1, header h2 {
   color:#fff;
 }
+
+section {
+  padding: 20px 0;
+}
+
+.section-purple {
+  background-color: #6e35E8;
+  color: #fff;
+}
+
+.section-purple img {
+  width: 250px;
+}
