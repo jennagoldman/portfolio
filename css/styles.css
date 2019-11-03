@@ -1,5 +1,5 @@
 header {
-  height:600px;
+  height:800px;
   background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5)), url('../img/wireframe.jpg');
   background-size:cover;
   color: #fff;
@@ -7,14 +7,43 @@ header {
 
 header .container {
   display: flex;
-  height: 600px;
+  height: 800px;
   justify-content: center;
   align-items: center;
   flex-direction:column;
 }
 
+header h2 {
+  margin-top:0;
+}
+
+button {
+  background-color: #6E35E8;
+  border: 1px solid #6E35E8;
+  border-radius: 15px;
+  color: #fff;
+  width:125px;
+  margin-top:10px;
+  padding:5px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #6E35E8;
+}
+
 section {
   padding: 20px 0;
+}
+
+section h2 a {
+  color: #000;
+}
+
+section h2 a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 .panel {
@@ -22,7 +51,7 @@ section {
 }
 
 .panel-default .panel-heading {
-  background-color: #6e35E8;
+  background-color: #6E35E8;
   color: #fff;
 }
 
@@ -31,8 +60,13 @@ section {
 }
 
 .section-purple {
-  background-color: #6e35E8;
+  background-color: #6E35E8;
   color: #fff;
+}
+
+.section-purple h2 a:hover {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .section-purple img {
@@ -62,7 +96,7 @@ footer {
   margin:0 10px 0 0;
 	border-radius: 20px;
   float:right;
-  background: #6e35E8;
+  background: #6E35E8;
 }
 
 .social-icon i {
