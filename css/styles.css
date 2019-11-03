@@ -1,11 +1,11 @@
-/************
+/*************************************
 HEADER STYLES
-************/
+*************************************/
 header {
   height:800px;
   background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5)), url('../img/wireframe.jpg');
   background-size:cover;
-  color: #fff;
+  color: #FFF;
 }
 
 header .container {
@@ -21,9 +21,9 @@ header h2 {
 }
 
 
-/************
+/*************************************
 BUTTON STYLES
-************/
+*************************************/
 button {
   border: 1px solid #6E35E8;
   border-radius: 15px;
@@ -35,18 +35,21 @@ button {
 
 .btn-purple {
   background-color: #6E35E8;
-  color: #fff;
+  color: #FFF;
 }
 
 .btn-purple:hover {
-  background-color: #fff;
+  background-color: #FFF;
   color: #6E35E8;
 }
+
 
 .btn-white {
   background-color: #FFF;
   border: 1px solid #6E35E8;
   color: #6E35E8;
+  font-size:10px;
+  width:100px;
 }
 
 .btn-white:hover {
@@ -55,9 +58,9 @@ button {
 }
 
 
-/*************
+/*************************************
 SECTION STYLES
-*************/
+*************************************/
 section {
   padding: 20px 0;
 }
@@ -82,21 +85,21 @@ section {
 }
 
 .section-purple a {
-  color:#fff;
+  color:#FFF;
   font-weight: bold;
 }
 
 
-/************
+/*************************************
 PANEL STYLES
-************/
+*************************************/
 .panel {
   height: 225px;
 }
 
 .panel-default .panel-heading {
   background-color: #6E35E8;
-  color: #fff;
+  color: #FFF;
 }
 
 .panel-title {
@@ -104,25 +107,21 @@ PANEL STYLES
 }
 
 
-/*******************
-MISC ABOUT ME STYLES
-*******************/
-.italics {
-  font-style:italic;
-}
-
-#headshot {
-  width: 275px;
-}
-
-
-/************
+/*************************************
 FOOTER STYLES
-************/
+*************************************/
 footer {
   background-color: #000;
-  color: #fff;
+  color: #FFF;
   padding: 20px 0;
+}
+
+footer a {
+  color:#FFF;
+}
+
+footer a:hover {
+  color: #FFF;
 }
 
 .social-icon {
@@ -141,4 +140,47 @@ footer {
   position:absolute;
 	left:8px;
 	top:6px;
+}
+
+
+/*************************************
+MISC ABOUT ME STYLES
+*************************************/
+.italics {
+  font-style:italic;
+}
+
+#headshot {
+  width: 275px;
+}
+
+
+/*************************************
+MEDIA QUERIES
+*************************************/
+
+@media (min-width:481px) and (max-width:767px) {
+
+  header {
+    height:400px;
+  }
+
+  header .container {
+    height:400px;
+  }
+
+  .panel {
+    margin: 20px 50px;
+  }
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+  .panel {
+    height: 250px;
+  }
+
+  #headshot {
+    width:225px;
+  }
 }
