@@ -1,23 +1,39 @@
 /*************************************
 HEADER STYLES
 *************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 header {
-  height:800px;
+  height:100vh;
   background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5)), url('../img/wireframe.jpg');
   background-size:cover;
   color: #FFF;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Imprima', sans-serif;
+}
+
+h1 {
+  font-family: 'Imprima', sans-serif;
 }
 
 header .container {
   display: flex;
-  height: 800px;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
+  vertical-align: middle;
+  padding-top: 225px;
 }
 
 header h2 {
   margin-top:0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 
