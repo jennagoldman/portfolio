@@ -3,6 +3,7 @@ HEADER STYLES
 *************************************/
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -110,7 +111,7 @@ section {
 PANEL STYLES
 *************************************/
 .panel {
-  height: 350px;
+  height: 425px;
 }
 
 .panel-default .panel-heading {
