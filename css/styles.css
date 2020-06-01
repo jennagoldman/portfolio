@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
 /*************************************
 HEADER STYLES
 *************************************/
@@ -53,6 +58,7 @@ button {
 .btn-purple {
   background-color: #6E35E8;
   color: #FFF;
+  margin: 0.75rem;
 }
 
 .btn-purple:hover {
