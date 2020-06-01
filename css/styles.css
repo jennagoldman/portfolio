@@ -92,7 +92,7 @@ section {
 }
 
 .section-purple {
-  background-color: #6E35E8;
+  background-image: linear-gradient(to right, #6E35E8 , rgb(180, 143, 255));
   color: #fff;
 }
 
@@ -105,24 +105,6 @@ section {
   color:#FFF;
   font-weight: bold;
 }
-
-
-/*************************************
-PANEL STYLES
-*************************************/
-.panel {
-  height: 425px;
-}
-
-.panel-default .panel-heading {
-  background-color: #6E35E8;
-  color: #FFF;
-}
-
-.panel-title {
-  text-align: center;
-}
-
 
 /*************************************
 FOOTER STYLES
@@ -159,7 +141,6 @@ footer a:hover {
 	top:6px;
 }
 
-
 /*************************************
 MISC ABOUT ME STYLES
 *************************************/
@@ -171,6 +152,62 @@ MISC ABOUT ME STYLES
   width: 275px;
 }
 
+/********************
+PROJECT FLIP CARDS
+*********************/
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem;
+}
+.flip-card {
+  background-color: transparent;
+  width: 450px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #6E35E8;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 2rem;
+}
+
+.tech-stack {
+  font-size: 1.5rem;
+}
+
+.project-description {
+  text-align: left;
+}
 
 /*************************************
 MEDIA QUERIES
@@ -190,59 +227,6 @@ MEDIA QUERIES
     margin: 20px 50px;
   }
 }
-
-/** Projects **/
-#projects.row {
-  padding: 0.75vw;
-  display: grid;
-  grid-template-columns: repeat(64, 1fr);
-  grid-template-rows: 55vh 30vh;
-  grid-row-gap: 0.75vw;
-}
-.box a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.box a:hover img {
-  opacity: 0.75;
-}
-.box__inner {
-  background-color: #005696;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.box__inner img {
-  width: 100%;
-  height: 100%;
-  object-position: 50% 50%;
-  object-fit: cover;
-  transition: opacity 0.2s ease-out;
-}
-.box--left {
-  clip-path: polygon(0 0, 98% 0, 83% 100%, 0 100%);
-  grid-row: 1;
-  grid-column: 1 / span 35;
-}
-.box--right {
-  clip-path: polygon(17% 0, 100% 0, 100% 100%, 2% 100%);
-  grid-row: 1;
-  grid-column: span 35 / -1;
-}
-.box--small {
-  grid-row: 2;
-}
-.box--small.box--left {
-  clip-path: polygon(0 0, 83% 0, 98% 100%, 0 100%);
-}
-.box--small.box--right {
-  clip-path: polygon(2% 0, 100% 0, 100% 100%, 17% 100%);
-}
-
 
 @media (min-width:768px) and (max-width:991px) {
   .panel {
