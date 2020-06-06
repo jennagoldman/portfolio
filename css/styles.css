@@ -98,7 +98,7 @@ section {
 }
 
 .section-purple {
-  background-image: linear-gradient(to right, #6E35E8 , rgb(180, 143, 255));
+  background-image: linear-gradient(to right, rgb(81, 7, 243) , rgb(180, 143, 255));
   color: #fff;
 }
 
@@ -227,12 +227,12 @@ MEDIA QUERIES
 @media (max-width:767px) {
   header {
     min-height: 275px;
-    max-height: 400px;
-    background-image: linear-gradient(rgba(106,33,247,0.5),rgba(0,98,255,0.5));
+    max-height: 300px;
+    background-image: linear-gradient(to right, rgb(81, 7, 243) , rgb(180, 143, 255));
   }
 
   header .container {
-    padding-top: 100px;
+    padding-top: 75px;
   }
 
   header .row {
@@ -243,6 +243,7 @@ MEDIA QUERIES
     font-size: 0.8em;
     margin: 0.5rem;
     width: 75px;
+    border: 1px solid white;
   }
 
   .section-white .row {
