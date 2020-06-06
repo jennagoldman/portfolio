@@ -17,7 +17,7 @@ header {
   background-size:cover;
   color: #FFF;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   font-family: 'Imprima', sans-serif;
 }
 
@@ -98,7 +98,7 @@ section {
 }
 
 .section-purple {
-  background-image: linear-gradient(to right, #6E35E8 , rgb(180, 143, 255));
+  background-image: linear-gradient(to right, rgb(81, 7, 243) , rgb(180, 143, 255));
   color: #fff;
 }
 
@@ -187,6 +187,11 @@ PROJECT FLIP CARDS
   transform: rotateY(180deg);
 }
 
+.flip-card-front img {
+  width:450px;
+  height:350px;
+}
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -219,27 +224,67 @@ PROJECT FLIP CARDS
 MEDIA QUERIES
 *************************************/
 
-@media (min-width:481px) and (max-width:767px) {
-
+@media (max-width:767px) {
   header {
-    height:400px;
+    min-height: 275px;
+    max-height: 300px;
+    background-image: linear-gradient(to right, rgb(81, 7, 243) , rgb(180, 143, 255));
   }
 
   header .container {
-    height:400px;
+    padding-top: 75px;
   }
 
-  .panel {
-    margin: 20px 50px;
+  header .row {
+    margin: 2rem;
   }
-}
 
-@media (min-width:768px) and (max-width:991px) {
-  .panel {
-    height: 250px;
+  .btn-purple {
+    font-size: 0.8em;
+    margin: 0.5rem;
+    width: 75px;
+    border: 1px solid white;
+  }
+
+  .section-white .row {
+    display: block;
+    margin: 2rem auto;
+  }
+
+  .flip-card {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .flip-card-front img {
+    width: 100%;
+  }
+
+  .flip-card-back h1 {
+    font-size: 2em;
+    margin-top: 0.5rem;
+  }
+
+  .tech-stack {
+    font-size: 0.8em;
+  }
+
+  .flip-card-back p {
+    font-size: 0.9em;
+
   }
 
   #headshot {
-    width:225px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .section-purple .row {
+    display: block;
+    margin: 0;
+  }
+
+  footer p {
+    font-size: 0.8em;
   }
 }
