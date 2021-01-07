@@ -78,6 +78,7 @@ button {
 .btn-white:hover {
   background-color: #6E35E8;
   color: #FFF;
+  border-color: #FFF;
 }
 
 
@@ -156,6 +157,7 @@ MISC ABOUT ME STYLES
 
 #headshot {
   width: 275px;
+  margin-right: 20px;
 }
 
 /********************
